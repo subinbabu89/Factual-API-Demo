@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.linearlistview.LinearListView
+        android:id="@+id/vertical_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/holo_red_dark"
+        android:dividerPadding="3000dp"
+        android:orientation="vertical"
+        android:showDividers="none"
+        android:visibility="gone"
+        app:dividerThickness="-1dp" />
+
+    <TextView
+        android:id="@+id/txtv_no_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgv_dining_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:paddingBottom="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/dining_image"/>
+</RelativeLayout>
